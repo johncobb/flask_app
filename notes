@@ -1,0 +1,20 @@
+
+cd ~/project_name
+
+# create virtual environment
+virtualenv env
+
+# Now install required modules
+env/bin/pip install flask
+env/bin/pip install flask-sqlalchemy
+env/bin/pip install flask-wtf
+env/bin/pip install MySQL-python
+env/bin/pip intall flask-security
+# Activate and deactivate virtualenv
+ubuntu@ip-192-168-1-5:~/apps/flask_app$ . env/bin/activate
+(env) ubuntu@ip-172-31-61-6:~/apps/flask_app$ deactivate
+
+ # Amazon AWS in particular neds the host parameter
+ # to listen on all ports. I was unable to connecti
+ # without it.
+app.run('host=0.0.0.0')
