@@ -14,7 +14,14 @@ env/bin/pip intall flask-security
 ubuntu@ip-192-168-1-5:~/apps/flask_app$ . env/bin/activate
 (env) ubuntu@ip-172-31-61-6:~/apps/flask_app$ deactivate
 
- # Amazon AWS in particular neds the host parameter
- # to listen on all ports. I was unable to connecti
- # without it.
+
+
+# We're going to decorate our website using Bootstrap
+# Download from git: git clone https://github.com/BlackrockDigital/startbootstrap-freelancer.git
+# copy the contents to the static folder cp -R 
+# Copy the index.html file to the templates folder
+
+# Amazon AWS in particular neds the host parameter
+# to listen on all ports. I was unable to connecti
+# without it.
 app.run('host=0.0.0.0')

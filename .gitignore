@@ -1,4 +1,6 @@
 *.pyc
 *.pyo
 env
+startbootstrap-freelancer
+static
 
