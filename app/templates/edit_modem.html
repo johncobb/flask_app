@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Modem</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<form method="post" action="/modem/post_modem">
+		<label>SIM: </label>
+		<input id="sim" name="sim" type="text" value="{{ modem.sim }}" />
+		<label>IMEI: </label>
+		<input id="imei"	name="imei" type="text" value="{{ modem.imei }}" />
+		<label>Phone: </label>
+		<input id="phone"	name="phone" type="text" value="{{ modem.phone }}" />
+		<label>IP: </label>
+		<input id="ip"	name="ip" type="text" /value="{{ modem.ip }}" />
+		<label>SSH Port: </label>
+		<input id="ssh_port"	name="ssh_port" type="text" value="{{ modem.ssh_port }}" />
+		<label>F/W: </label>
+		<input id="firmware"	name="firmware" type="text" value="{{ modem.firmware }}" />
+		<input type="submit" />
+	</form>
+
+
+</body>
+</html>
