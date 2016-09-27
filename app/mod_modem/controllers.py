@@ -14,8 +14,11 @@ def modem(modemId):
     modem = Modem.query.filter_by(id=modemId).first()
     return render_template('modem.html', modem=modem)
 
+@bp_modem.route('/add')
+def add_modem():
+    return render_template('add_modem.html')
 
-@bp_modem_route('/post_modem', methods=['POST'])
+@bp_modem.route('/post_modem', methods=['POST'])
 def post_modem():
     # Create the modem object
     sim = request.form['sim']
