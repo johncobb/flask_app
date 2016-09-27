@@ -13,8 +13,8 @@ db = SQLAlchemy(app)
 
 
 from app.mod_auth.controllers import bp_auth as bp_auth_module
-#from app.mod_modem.controllers import mod_modem as modem_module
+from app.mod_modem.controllers import bp_modem as bp_modem_module
 app.register_blueprint(bp_auth_module)
-
-#db.create_all()
+app.register_blueprint(bp_modem_module)
+db.create_all()
 
